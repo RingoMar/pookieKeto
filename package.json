@@ -1,0 +1,14 @@
+{
+  "name": "pookieketo",
+  "version": "1.0.0",
+  "description": "A website to help pookie with keto... smile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ringomar",
+  "license": "ISC",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
