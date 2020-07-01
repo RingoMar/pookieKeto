@@ -80,6 +80,30 @@ let recipes = {
         "id": 10,
         "tags": ["crinkle"]
     },
+    "Cauliflower Pizza": {
+        "name": "Cauliflower Pizza",
+        "description": "The next time you’re having a pizza party, make it a keto one. Combine cauliflower, egg, coconut flour, and herbs to make a crust that tastes like the real thing. Top it off with a homemade avocado oil pesto, veggies, and cheese (yes, cheese!), and your friends will be asking where you ordered it. It’s THAT good.",
+        "link": "cauliflower-pizza",
+        "image": "https://i.imgur.com/tNvqlIX.jpg",
+        "id": 11,
+        "tags": ["crinkle"]
+    },
+    "Keto Ice Cream": {
+        "name": "Keto Ice Cream",
+        "description": "According to Sisson, this is the keto ice cream you’ve been waiting for. It’s creamy, rich, luscious, and made with just five ingredients.",
+        "link": "keto-ice-cream",
+        "image": "https://i.imgur.com/iS2Mc5U.png",
+        "id": 12,
+        "tags": ["crinkle"]
+    },
+    "Keto Potato Salad": {
+        "name": "Keto Potato Salad",
+        "description": "Here’s the kicker: This salad has no actual potatoes. Instead, the low carb, keto, Paleo salad has a secret ingredient we know you’ve used before: cauliflower.",
+        "link": "potato-salad",
+        "image": "https://i.imgur.com/HHGBaid.png",
+        "id": 13,
+        "tags": ["crinkle"]
+    },
 
     "Coming Soon": {
         "name": "Coming Soon",
@@ -94,7 +118,9 @@ let recipes = {
 }
 function showPage() {
     document.getElementById("RinLoad").style.display = "none";
-    document.getElementById("Rinformulaire").style.display = "block";
+    
+    $(".all-rec").fadeIn(10000);
+    // document.getElementById("Rinformulaire").style.display = "block";
 }
 
 
@@ -105,7 +131,6 @@ for (x in recipes) {
     var link = recipes[x]["link"]
     var image = recipes[x]["image"]
     var id = recipes[x]["id"]
-    console.log(description, link, image, id)
     var final = `
         <div class="col s12 m6">
             <div class="card large">
@@ -127,7 +152,6 @@ for (x in recipes) {
     $(".all-rec").append(final);
 
 }
-$(".all-rec").fadeIn(4000);
 // $(".all-rec").delay(1050).animate({
 //     opacity: 1
 // }, 800);

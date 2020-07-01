@@ -169,6 +169,58 @@ var reci = {
         "-Divide the ground beef into 12 portions, rolling each into a small disc shape. Add salt and pepper to taste.  In a large grill pan, heat remaining tbsp olive oil over medium heat.  Once the pan is hot, add the meat and allow to cook for 3 minutes on one side.  Flip and allow to cook for 3 minutes on the other side.  Cook to desired level of doneness (I like burgers cooked to medium).",
         "-Stack a mushroom, burger, cheese, onion, pickles and your choice of condiments.  Top with second mushroom cap and add a basil leaf for garnish.  Use a toothpick to hold.  Serve and enjoy!",]
     },
+    "cauliflower-pizza": {
+        "name": "Cauliflower Pizza",
+        "url": "https://www.primalkitchen.com/pesto-keto-cauliflower-pizza-with-primal-kitchen/",
+        "image": "https://i.imgur.com/tNvqlIX.jpg",
+        "ing": ["1 head cauliflower",
+        "1 egg",
+        "1/2 cup coconut flour",
+        "1 tsp parsley",
+        "1 tsp basil",
+        "1 tsp oregano",
+        "1 tablespoon",
+        ],
+        "dir": ["2 cups fresh basil",
+        "1/3 cup pine nuts, toasted",
+        "1/4 cup grated Parmesan cheese",
+        "2/3 cup Primal Kitchen Extra Virgin Avocado Oil",
+        "1 teaspoon garlic, minced",
+        "1 teaspoon lemon juice",
+        "Salt and pepper to taste",
+        ]
+    },
+    "keto-ice-cream": {
+        "name": "Vanilla Coconut Collagen Fuel Keto Ice Cream",
+        "url": "https://www.marksdailyapple.com/primal-keto-ice-cream/",
+        "image": "https://i.imgur.com/iS2Mc5U.png",
+        "ing": ["1 13.5 ounce can full-fat coconut milk (400 ml)",
+        "1 scoop PRIMAL KITCHEN® Vanilla Coconut Collagen Fuel (16.5 g)",
+        "¼ cup macadamia nut butter* (60 ml)",
+        "2 teaspoons pure vanilla extract (without propylene glycol) (10 ml)",
+        "pinch of salt"        
+        ],
+        "dir": ["To make macadamia butter, blend 1 cup raw, unsalted macadamia nuts in the food processor for 3 to 5 minutes until very smooth.",
+        "To make the ice cream, whisk coconut milk, PRIMAL KITCHEN® Collagen Fuel, macadamia butter, vanilla, and salt together until smooth. If making chocolate ice cream, whisk in cocoa powder.",
+        
+        ]
+    },
+    "potato-salad": {
+        "name": "Keto Potato Salad",
+        "url": "https://www.healthfulpursuit.com/2015/07/potato-salad-that-isnt/",
+        "image": "https://i.imgur.com/HHGBaid.png",
+        "ing": ["1 head of cauliflower, chopped into bite-sized pieces",
+        "6 hardboiled eggs, omit if making vegan or egg-free",
+        "3 pickles, chopped",
+        "½ cup chopped fresh parsley",
+        "¼ cup green onion, green part only, chopped"                
+        ],
+        "dir": ["Prepare the cauliflower by cutting into bite-sized pieces. You can do this with a knife or if you want smaller pieces, shred. Steam for 2-3 minutes. Drain and set aside to cool.",
+        "Peel eggs and separate yolks, set aside. Cut the whites into small bite size pieces. Mix the egg whites into the cauliflower mixture in a large bowl along with chopped pickle, green onion and parsley.",
+        "Add egg yolks, mayo, mustard, pickle juice, salt and pepper into your high-powered blender and blend until smooth. Pour over the cauliflower mixture and stir to coat. Chill overnight and serve.",      
+        
+        ]
+    },
 
     "coming-soon": {
         "name": "Coming Soon",
