@@ -104,6 +104,22 @@ let recipes = {
         "id": 13,
         "tags": ["crinkle"]
     },
+    "BANG BANG CAULIFLOWER": {
+        "name": "BANG BANG CAULIFLOWER",
+        "description": "A low carb version of bang bang sauce drizzled over crispy cauliflower that is coated in a low carb breading. This low carb version is just as tasty as the original!",
+        "link": "bang-bang-cauliflower",
+        "image": "https://i.imgur.com/9TbUH5S.jpg",
+        "id": 14,
+        "tags": ["crinkle"]
+    },
+    "Shepherd’s Pie": {
+        "name": "Shepherd’s Pie",
+        "description": "Shepherd’s pie (also known as cottage pie) layered with sauteed beef, bacon and veggies in a smoked sauce, topped with garlic mashed cauliflower and baked until crisp.",
+        "link": "shepherds-pie",
+        "image": "https://i.imgur.com/d1xAZSW.jpg",
+        "id": 15,
+        "tags": ["crinkle"]
+    },
 
     "Coming Soon": {
         "name": "Coming Soon",
@@ -116,9 +132,10 @@ let recipes = {
 
     }
 }
+
 function showPage() {
     document.getElementById("RinLoad").style.display = "none";
-    
+
     $(".all-rec").fadeIn(10000);
     // document.getElementById("Rinformulaire").style.display = "block";
 }
