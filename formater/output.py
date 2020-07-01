@@ -4,6 +4,7 @@ from tkinter.ttk import Notebook
 from tkinter import ttk
 import requests
 
+
 class LanguageTab(ttk.Frame):
     def __init__(self, master, lang_name, lang_code):
         super().__init__(master)
@@ -14,9 +15,11 @@ class LanguageTab(ttk.Frame):
         self.translation_var = tk.StringVar(self)
         self.translation_var.set("")
 
-        self.translated_label = ttk.Label(self, textvar=self.translation_var, anchor="center")
+        self.translated_label = ttk.Label(
+            self, textvar=self.translation_var, anchor="center")
 
-        self.copy_button = ttk.Button(self, text="Copy to Clipboard", command=self.copy_to_clipboard)
+        self.copy_button = ttk.Button(
+            self, text="Copy to Clipboard", command=self.copy_to_clipboard)
 
         self.copy_button.pack(side=tk.BOTTOM, fill=tk.X)
         self.translated_label.pack(side=tk.TOP, fill=tk.BOTH, expand=1)
@@ -36,11 +39,14 @@ class NewLanguageForm(tk.Toplevel):
         self.title("Add new Language")
         self.geometry("300x150")
 
-        self.name_label = ttk.Label(self, text="Language Name", anchor="center")
+        self.name_label = ttk.Label(
+            self, text="Language Name", anchor="center")
         self.name_entry = ttk.Entry(self)
-        self.code_label = ttk.Label(self, text="Language Code", anchor="center")
+        self.code_label = ttk.Label(
+            self, text="Language Code", anchor="center")
         self.code_entry = ttk.Entry(self)
-        self.submit_button = ttk.Button(self, text="Submit", command=self.submit)
+        self.submit_button = ttk.Button(
+            self, text="Submit", command=self.submit)
 
         self.name_label.pack(fill=tk.BOTH, expand=1)
         self.name_entry.pack(fill=tk.BOTH)
@@ -54,11 +60,14 @@ class NewLanguageForm(tk.Toplevel):
 
         if lang_name and lang_code:
             new_tab = LanguageTab(self.master, lang_name, lang_code)
-            self.master.languages_menu.add_command(label=lang_name, command=lambda: self.master.add_new_tab(new_tab))
-            msg.showinfo("Language Option Added", "Language option " + lang_name + " added to menu")
+            self.master.languages_menu.add_command(
+                label=lang_name, command=lambda: self.master.add_new_tab(new_tab))
+            msg.showinfo("Language Option Added",
+                         "Language option " + lang_name + " added to menu")
             self.destroy()
         else:
-            msg.showerror("Missing Information", "Please add both a name and code")
+            msg.showerror("Missing Information",
+                          "Please add both a name and code")
 
 
 class TranslateBook(tk.Tk):
@@ -73,7 +82,8 @@ class TranslateBook(tk.Tk):
 
         english_tab = ttk.Frame(self.notebook)
 
-        self.translate_button = ttk.Button(english_tab, text="Translate", command=self.translate)
+        self.translate_button = ttk.Button(
+            english_tab, text="Translate", command=self.translate)
         self.translate_button.pack(side=tk.BOTTOM, fill=tk.X)
 
         self.english_entry = tk.Text(english_tab, bg="white", fg="black")
@@ -93,12 +103,11 @@ class TranslateBook(tk.Tk):
                 fsd = text.split("\n")
                 for line in fsd:
                     daout += '"{}",\n'.format(line)
-                    print ('"{}",'.format(line.replace("\n", "")))
+                    print('"{}",'.format(line.replace("\n", "")))
                 print(daout)
                 language.translation_var.set(daout)
         except Exception as e:
             msg.showerror("Translation Failed", str(e))
-
 
     def add_new_tab(self, tab):
         self.language_tabs.append(tab)
