@@ -309,13 +309,13 @@ let reci = {
         "image": "../img/unknown.png",
     }
 };
-
-let ranreci = (Object.keys(reci));
-var item = ranreci[Math.floor(Math.random() * ranreci.length-1)];
-$(".randdrop").append(`<a class="center" href="pages/recipe.html?r_id=${item}"><i class="tiny material-icons">directions_bike</i>I'm Feeling Lucky</a>`);
-$(".preload-imfl").fadeOut("fast");
-document.getElementByClass("preload-imfl").style.display = "none";
-
+try {
+    let ranreci = (Object.keys(reci));
+    var item = ranreci[Math.floor(Math.random() * ranreci.length - 1)];
+    $(".randdrop").append(`<a class="center" href="pages/recipe.html?r_id=${item}"><i class="tiny material-icons">directions_bike</i>I'm Feeling Lucky</a>`);
+    $(".preload-imfl").fadeOut("fast");
+    document.getElementByClass("preload-imfl").style.display = "none";
+}
 
 if (c) {
     console.log(c);
