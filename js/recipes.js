@@ -185,21 +185,55 @@ let reci = {
         "name": "Cauliflower Pizza",
         "url": "https://www.primalkitchen.com/pesto-keto-cauliflower-pizza-with-primal-kitchen/",
         "image": "https://i.imgur.com/tNvqlIX.jpg",
-        "ing": ["1 head cauliflower",
+        "ing": ["<p class='org-text'>For the pizza crust</p>",
+            "",
+            "1 head cauliflower",
             "1 egg",
             "1/2 cup coconut flour",
             "1 tsp parsley",
             "1 tsp basil",
             "1 tsp oregano",
-            "1 tablespoon",
-        ],
-        "dir": ["2 cups fresh basil",
+            "1 tablespoon Primal Kitchen Avocado Oil",
+            "<p class='org-text'>For the avocado oil pesto</p>",
+            "",
+            "2 cups fresh basil",
             "1/3 cup pine nuts, toasted",
             "1/4 cup grated Parmesan cheese",
             "2/3 cup Primal Kitchen Extra Virgin Avocado Oil",
             "1 teaspoon garlic, minced",
             "1 teaspoon lemon juice",
             "Salt and pepper to taste",
+            "<p class='org-text'>Toppings</p>",
+            "4 plum tomatoes, sliced thinly",
+            "1/2 cup broccolini",
+            "1/2 cup mozzarella cheese (full fat!)",
+            "2 tablespoons Primal Kitchen Vegan Ranch",
+            " ",
+            "Optional: Top with red pepper flakes",
+
+        ],
+        "dir": ["<p class='org-text'> For the cauliflower pizza crust</p>",
+            "Pulse cauliflower in food processor until it turns into rice.",
+            "Squeeze riced cauliflower through a cheese cloth or dish towel to remove moisture.",
+            "Place the cauliflower and coconut flour into a large mixing bowl.",
+            "In a separate mixing bowl, whisk together the eggs and spices until you’ve created a uniform liquid.",
+            "Combine the eggs and spices with the cauliflower and coconut flour, and knead the mixture into a smooth dough.",
+            "Line a baking sheet with parchment paper, and roll out the cauliflower dough into an even, circular crust about 1/2 inch thick. Brush the crust with Primal Kitchen Avocado Oil.",
+            "Bake the crust at 400ºF for 30 minutes",
+            "<p class='org-text'>For the Primal Kitchen Avocado Oil pesto</p>",
+            "Add the basil leaves, parmesan cheese, pine nuts, garlic cloves, Primal Kitchen® Extra Virgin Avocado Oil, lemon juice, salt, and pepper into the food processor.",
+            "Blend the ingredients until smooth.",
+            "<p class='org-text'> Topping the pizza</p>",
+            "Slice the tomatoes thinly.",
+            "Cut the broccolini into pieces. ",
+            "Slice the full-fat mozzarella cheese into even pieces.",
+            "Spread the pesto over the pizza crust in a thick, delicious layer.",
+            "Artfully layer veggies and cheese on top of the pesto.",
+            "Add a few thick lines of Primal Kitchen Vegan Ranch. ",
+            "Finish off with red pepper flakes, a sprinkle of salt and pepper, and light drizzle of Primal Kitchen Extra Virgin Avocado Oil, if desired.",
+            "Pop the pizza in the oven for another 6-7 minutes at 400ºF, or until the veggies are tender.",
+            "Enjoy!",
+
         ]
     },
     "keto-ice-cream": {
@@ -221,11 +255,19 @@ let reci = {
         "name": "Keto Potato Salad",
         "url": "https://www.healthfulpursuit.com/2015/07/potato-salad-that-isnt/",
         "image": "https://i.imgur.com/HHGBaid.png",
-        "ing": ["1 head of cauliflower, chopped into bite-sized pieces",
-            "6 hardboiled eggs, omit if making vegan or egg-free",
-            "3 pickles, chopped",
-            "½ cup chopped fresh parsley",
-            "¼ cup green onion, green part only, chopped"
+        "ing": ["<p class='org-text'>Salad</p>",
+        "1 head of cauliflower, chopped into bite-sized pieces",
+        "6 hardboiled eggs, omit if making vegan or egg-free",
+        "3 pickles, chopped",
+        "½ cup chopped fresh parsley",
+        "¼ cup green onion, green part only, chopped",
+        "<p class='org-text'>Dressing</p>",
+        "½ cup avocado oil mayonnaise or my vegan mayo recipe",
+        "2 tablespoons gluten-free dijon mustard",
+        "3 tablespoons pickle juice",
+        "¼ - ½ teaspoon sea salt",
+        "Freshly ground pepper, to taste",
+        
         ],
         "dir": ["Prepare the cauliflower by cutting into bite-sized pieces. You can do this with a knife or if you want smaller pieces, shred. Steam for 2-3 minutes. Drain and set aside to cool.",
             "Peel eggs and separate yolks, set aside. Cut the whites into small bite size pieces. Mix the egg whites into the cauliflower mixture in a large bowl along with chopped pickle, green onion and parsley.",
@@ -237,7 +279,7 @@ let reci = {
         "name": "Shepherd’s Pie",
         "url": "https://www.healthfulpursuit.com/recipe/paleo-bacon-shepherds-pie/",
         "image": "https://i.imgur.com/d1xAZSW.jpg",
-        "ing": ["<p class='red'>Beef Layer</p>",
+        "ing": ["<p class='org-text'>Beef Layer</p>",
             "375 grams (approximately 15 strips) smoked ham bacon",
             "0.75kg (1.6lbs) extra-lean ground beef",
             "2 cups diced carrots",
@@ -249,7 +291,7 @@ let reci = {
             "1 teaspoon smoked paprika",
             "½ teaspoon sea salt",
             "½ teaspoon ground pepper",
-            "<p class='red'>Mashed Cauliflower Topping</p>",
+            "<p class='org-text'>Mashed Cauliflower Topping</p>",
             "2 heads of cauliflower, florets removed from stem",
             "1 tablespoon coconut oil",
             "1 teaspoon garlic powder",
@@ -280,10 +322,10 @@ let reci = {
             "1 large egg whisked",
             "1 tbsp heavy cream",
             "1/2 tbsp parsley finely chopped",
-            "<p class='red'>BREADING</p>",
+            "<p class='org-text'>BREADING</p>",
             "1 cup superfine almond flour",
             "1 cup finely grated parmesan cheese use fresh and not shelf-stable kind",
-            "<p class='red'>BANG BANG SAUCE</p>",
+            "<p class='org-text'>BANG BANG SAUCE</p>",
             "1/4 cup mayonnaise",
             "1 tbsp chili paste I used sambal",
             "1 tbsp erythritol granular",
@@ -330,7 +372,13 @@ if (c) {
         }
 
         for (dif in reci[c]["dir"]) {
-            $(".dir").append(`<li>${reci[c]["dir"][dif]}</li>`);
+            if (reci[c]["dir"][dif].includes("<p class=")){
+
+                $(".dir").append(`<ul>${reci[c]["dir"][dif]}</ul>`);
+            }
+            else{
+                $(".dir").append(`<li>${reci[c]["dir"][dif]}</li>`);
+            }
 
         }
 
