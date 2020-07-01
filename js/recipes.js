@@ -316,6 +316,9 @@ try {
     $(".preload-imfl").fadeOut("fast");
     document.getElementByClass("preload-imfl").style.display = "none";
 }
+catch (error){
+    console.log(error)
+}
 
 if (c) {
     console.log(c);
