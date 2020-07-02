@@ -109,3 +109,23 @@ body {
         opacity: 0
     }
 }
+
+.btn-box-pad {
+    margin: 5px;
+}
+
+.overwirate-input:focus:not(.browser-default) {
+    background-color: #546e7a !important;
+    color: white !important;
+    -webkit-box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.2) !important;
+    border-bottom: medium solid white !important;
+}
+
+.topFilter.row.blue-grey.darken-1 {
+    padding-bottom: 10px;
+}
+
+form.datSerch {
+    padding-top: 8px;
+}

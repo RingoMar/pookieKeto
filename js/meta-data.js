@@ -13,7 +13,7 @@ let recipes = {
         "link": "kohlrabi-fries",
         "image": "https://i.imgur.com/aWsHsEv.jpg",
         "id": 2,
-        "tags": ["moring", "night"]
+        "tags": ["noon", "night"]
     },
 
     "Cauliflower Sandwiches": {
@@ -30,7 +30,7 @@ let recipes = {
         "link": "cauliflower-mash",
         "image": "https://i.imgur.com/Nwto9hu.png",
         "id": 4,
-        "tags": ["moring", "night"]
+        "tags": ["noon", "night"]
     },
     "Keto Bagels": {
         "name": "Keto Bagels",
@@ -70,7 +70,7 @@ let recipes = {
         "link": "portabella-sliders",
         "image": "https://i.imgur.com/MuUSAME.png",
         "id": 9,
-        "tags": ["crinkle"]
+        "tags": ["crinkle", "noon"]
     },
     "taco": {
         "name": "Taco",
@@ -78,7 +78,7 @@ let recipes = {
         "link": "taco",
         "image": "https://i.imgur.com/LvOwaDa.png",
         "id": 10,
-        "tags": ["crinkle"]
+        "tags": ["crinkle", "noon"]
     },
     "Cauliflower Pizza": {
         "name": "Cauliflower Pizza",
@@ -86,7 +86,7 @@ let recipes = {
         "link": "cauliflower-pizza",
         "image": "https://i.imgur.com/tNvqlIX.jpg",
         "id": 11,
-        "tags": ["crinkle"]
+        "tags": ["noon", "night"]
     },
     "Keto Ice Cream": {
         "name": "Keto Ice Cream",
@@ -102,7 +102,7 @@ let recipes = {
         "link": "potato-salad",
         "image": "https://i.imgur.com/HHGBaid.png",
         "id": 13,
-        "tags": ["crinkle"]
+        "tags": ["noon", "night"]
     },
     "BANG BANG CAULIFLOWER": {
         "name": "BANG BANG CAULIFLOWER",
@@ -110,7 +110,7 @@ let recipes = {
         "link": "bang-bang-cauliflower",
         "image": "https://i.imgur.com/9TbUH5S.jpg",
         "id": 14,
-        "tags": ["crinkle"]
+        "tags": ["noon"]
     },
     "Shepherd’s Pie": {
         "name": "Shepherd’s Pie",
@@ -118,7 +118,7 @@ let recipes = {
         "link": "shepherds-pie",
         "image": "https://i.imgur.com/d1xAZSW.jpg",
         "id": 15,
-        "tags": ["crinkle"]
+        "tags": ["night", "noon"]
     },
 
     "Coming Soon": {
@@ -148,8 +148,13 @@ for (x in recipes) {
     var link = recipes[x]["link"]
     var image = recipes[x]["image"]
     var id = recipes[x]["id"]
+    let tags = recipes[x]["tags"]
+    let tagss
+    for (i = 0; i < tags.length; i++) {
+        tagss += ` ${recipes[x]["tags"][i]}`;
+    }
     var final = `
-        <div class="col s12 m6">
+        <div class="cards-rec col s12 m6 ${tagss}">
             <div class="card large">
                 <div class="card-image">
                     <img class="img-item" src="${image}">
@@ -173,3 +178,49 @@ for (x in recipes) {
 //     opacity: 1
 // }, 800);
 showPage()
+
+let active = false
+
+$(".night-btn").click(function () {
+    if (active){
+        active = false
+        $(".cards-rec").css("display", "block");
+    }
+    else {
+        active = true
+        $(".cards-rec").not(".night").css("display", "none");
+    }
+});
+
+$(".snacks-btn").click(function () {
+    if (active){
+        active = false
+        $(".cards-rec").css("display", "block");
+    }
+    else {
+        active = true
+        $(".cards-rec").not(".crinkle").css("display", "none");
+    }
+});
+
+$(".breakfast-btn").click(function () {
+    if (active){
+        active = false
+        $(".cards-rec").css("display", "block");
+    }
+    else {
+        active = true
+        $(".cards-rec").not(".night").css("display", "none");
+    }
+});
+
+$(".lunch-btn").click(function () {
+    if (active){
+        active = false
+        $(".cards-rec").css("display", "block");
+    }
+    else {
+        active = true
+        $(".cards-rec").not(".moring").css("display", "none");
+    }
+});
