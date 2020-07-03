@@ -180,47 +180,92 @@ for (x in recipes) {
 showPage()
 
 let active = false
+let current = ""
 
 $(".night-btn").click(function () {
-    if (active){
+    var filtername = "night"
+    if (active && filtername != current) {
+        current = filtername
+        active = true
+        $(".cards-rec").css("display", "block");
+        $(".done-check").remove();
+        $(".cards-rec").not(".night").css("display", "none");
+        $(".night-btn").append("<i class='material-icons right done-check'>done</i>");
+
+    } else if (active) {
         active = false
         $(".cards-rec").css("display", "block");
-    }
-    else {
+        $(".done-check").remove();
+    } else {
+        current = filtername
         active = true
         $(".cards-rec").not(".night").css("display", "none");
+        $(".night-btn").append("<i class='material-icons right done-check'>done</i>");
     }
 });
 
 $(".snacks-btn").click(function () {
-    if (active){
+    var filtername = "snacks"
+    if (active && filtername != current) {
+        current = filtername
+        active = true
+        $(".cards-rec").css("display", "block");
+        $(".done-check").remove();
+        $(".cards-rec").not(".crinkle").css("display", "none");
+        $(".snacks-btn").append("<i class='material-icons right done-check'>done</i>");
+
+    } else if (active) {
         active = false
         $(".cards-rec").css("display", "block");
-    }
-    else {
+        $(".done-check").remove();
+    } else {
+        current = filtername
         active = true
         $(".cards-rec").not(".crinkle").css("display", "none");
+        $(".snacks-btn").append("<i class='material-icons right done-check'>done</i>");
     }
 });
 
 $(".breakfast-btn").click(function () {
-    if (active){
+    var filtername = "mornin"
+    if (active && filtername != current) {
+        current = filtername
+        active = true
+        $(".cards-rec").css("display", "block");
+        $(".done-check").remove();
+        $(".cards-rec").not(".moring").css("display", "none");
+        $(".breakfast-btn").append("<i class='material-icons right done-check'>done</i>");
+
+    } else if (active) {
         active = false
         $(".cards-rec").css("display", "block");
-    }
-    else {
+        $(".done-check").remove();
+    } else {
+        current = filtername
         active = true
-        $(".cards-rec").not(".night").css("display", "none");
+        $(".cards-rec").not(".moring").css("display", "none");
+        $(".breakfast-btn").append("<i class='material-icons right done-check'>done</i>");
     }
 });
 
 $(".lunch-btn").click(function () {
-    if (active){
+    var filtername = "noon"
+    if (active && filtername != current) {
+        current = filtername
+        active = true
+        $(".cards-rec").css("display", "block");
+        $(".done-check").remove();
+        $(".cards-rec").not(".noon").css("display", "none");
+        $(".lunch-btn").append("<i class='material-icons right done-check'>done</i>");
+
+    } else if (active) {
         active = false
         $(".cards-rec").css("display", "block");
-    }
-    else {
+        $(".done-check").remove();
+    } else {
+        current = filtername
         active = true
-        $(".cards-rec").not(".moring").css("display", "none");
+        $(".cards-rec").not(".noon").css("display", "none");
+        $(".lunch-btn").append("<i class='material-icons right done-check'>done</i>");
     }
 });
