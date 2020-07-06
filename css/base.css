@@ -111,6 +111,7 @@ body {
 }
 
 .btn-box-pad {
+    border-radius: 25px;
     margin: 5px;
 }
 
@@ -128,4 +129,8 @@ body {
 
 form.datSerch {
     padding-top: 8px;
+}
+
+nav ul i:hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
