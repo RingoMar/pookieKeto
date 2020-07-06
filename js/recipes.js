@@ -313,6 +313,93 @@ let reci = {
 
         ]
     },
+    "peanut-butter-truffles": {
+        "name": "Peanut Butter Truffle",
+        "url": "https://www.savorytooth.com/peanut-butter-truffles/",
+        "image": "https://i.imgur.com/oqV1oEH.png",
+        "ing": ["<p class='org-text'>Peanut Butter Balls </p>",
+        "1/2 cup (128g) creamy peanut butter",
+        "1/3 cup (54g) confectioners swerve",
+        "1/4 cup (28g) blanched almond flour",
+        "<p class='org-text'>Chocolate Coating</p>",
+        "3 ounces (85g) unsweetened baking chocolate finely chopped",
+        "3 tablespoons (27g) confectioners swerve",
+        "1 tablespoon (14g) coconut oil",
+        
+
+        ],
+        "dir": ["In a bowl, combine all peanut butter ball ingredients until well-mixed and a dough is formed. If the peanut butter is too stiff to easily stir, let it soften at room temperature until it becomes more manageable.",
+        "Prepare a baking sheet lined with parchment paper. Form twelve 1-inch balls from the peanut butter mixture and arrange them in a single layer on the parchment paper. Place in the freezer for at least 30 minutes to harden. The longer you let them freeze, the easier it will be to dip them into chocolate without becoming too soft and losing their shape.",
+        "In a bowl, add all chocolate coating ingredients. Microwave in 30-second intervals, thoroughly stirring in between, until melted and smooth. Make sure you don't overheat the chocolate.",
+        "Take the peanut butter balls out of the freezer. Using toothpicks to help transfer them, dip a peanut butter ball in chocolate until coated on all sides, letting the excess drip off. Place the coated ball back on the parchment paper. Repeat until all are coated.",
+        "Refrigerate until the chocolate shell is hardened, about an hour or longer. They can be made ahead of time, and stored in the refrigerator until you're ready to serve them.",
+        ]
+    },
+    "chocolate-peanut-butter-shake": {
+        "name": "Chocolate Peanut Butter Shake",
+        "url": "https://www.savorytooth.com/keto-shake/",
+        "image": "https://i.imgur.com/4hwPHNH.png",
+        "ing": ["1 cup unsweetened plain almond milk ",
+        "1/2 cup boiling water",
+        "1/2 cup crushed ice",
+        "3 tablespoons cream cheese ",
+        "3 tablespoons confectioners swerve sweetener ",
+        "2 tablespoons unsweetened cocoa powder",
+        "1 tablespoon peanut butter",
+        "1 teaspoon vanilla extract",
+        "1/8 teaspoon table salt",
+
+        ],
+        "dir": ["<p class='org-text'>Recommended Blender Method</p>",
+        "Add swerve, cocoa powder, vanilla, and salt to blender. Pour boiling water on top, then add cream cheese and peanut butter. Blend until cream cheese and peanut butter are fully dissolved. Add crushed ice, and blend until ice is melted. Stir in almond milk. Serve.",
+        "<p class='org-text'>Alternate Shake Method </p>",
+        "Add swerve, cocoa powder, vanilla, and salt to 20-ounce bottle. Pour boiling water on top, then add cream cheese and peanut butter. Close with lid, and vigorously shake for 1 minute until cream cheese and peanut butter are fully dissolved. Add 1/4 cup crushed ice and 1/4 cup cold water (instead of 1/2 cup crushed ice), and vigorously shake until ice is melted. Stir in almond milk. Serve.",
+        
+        ]
+    },
+    "iced-tea": {
+        "name": "Iced Tea",
+        "url": "https://www.savorytooth.com/iced-tea/",
+        "image": "https://i.imgur.com/520j42L.png",
+        "ing": ["6 black tea packets or 2 tablespoons loose black tea",
+        "2 lemons",
+        "1/2 cup confectioners swerve sweetener",
+        "5 cups ice cubes",
+        "4 cups water",        
+
+        ],
+        "dir": ["<p class='org-text'>Make Hot Tea:</p> Add tea bags to a pitcher with 2-quart capacity (8 cups), safe for hot water and rapid temperature changes. Bring 4 cups water to a simmer. Pour hot water into the pitcher over tea bags. Steep tea for 5 minutes or to desired strength, then remove and discard tea bags.",
+        "<p class='org-text'>Add Other Ingredients:</p> Stir in sweetener until fully dissolved in the hot water. Cut lemons in half and squeeze them until you have 1/4 cup of juice, discarding any seeds. Any unused lemon halves can be cut into slices or wedges to be used as garnish. Add lemon juice and ice cubes.",
+        "<p class='org-text'>Shake & Serve:</p> Securely close the pitcher with the lid. Shake a few times or until mixed. Add any lemon slices or wedges as garnish. Serve iced tea.",
+        
+        
+        ]
+    },
+    "crackers": {
+        "name": "Low Carb Crackers with Almond Flour",
+        "url": "https://www.savorytooth.com/low-carb-crackers/",
+        "image": "https://i.imgur.com/qT9yNjV.png",
+        "ing": ["3/4 cup blanched almond flour (3 ounces weight)",
+        "1/2 cup finely grated parmesan cheese with sandy texture (2 ounces weight)",
+        "1 large egg beaten",
+        "1/4 teaspoon coarsely ground black pepper",
+        "1/4 teaspoon salt",             
+
+        ],
+        "dir": ["Preheat the oven to 350 F.",
+        "Combine all dry ingredients (almond flour, parmesan cheese, pepper, salt) in a bowl, stirring together until well-mixed.",
+        "Add about two-thirds of the beaten egg and stir together until it forms a cohesive and rollable dough. Use hands to form the dough, if needed. Set aside the remaining egg.",
+        "Prepare a baking sheet lined with parchment paper or a baking mat. Divide the dough into 4 equal balls and space them out on the parchment paper.",
+        "Working with one piece of dough at a time, cover with plastic wrap and flatten the dough to less than 1/8 inch thick. Get it as thin as you can, and make it uniform across the dough so that the crackers will crisp evenly in the oven. Each dough piece should be flattened to a roughly square shape, about 3x3 inches.",
+        "Optionally, use a butter knife to lightly score the dough into 16-20 individual crackers, making it easier to break them up after baking.",
+        "Using the remaining beaten egg, brush a very thin layer across the surface of the crackers. Discard the rest of the egg.",
+        "Bake at 350 F until golden brown and crispy, about 20 minutes. They will crisp starting from the edges and moving inward; the crackers are done when the centers are crispy. Ovens vary, so frequently monitor the crackers starting at 15 minutes and remove them when done.",
+        "Let them fully cool before breaking into individual crackers by snapping them along the perforations.",
+        
+        
+        
+        ]
+    },
     "bang-bang-cauliflower": {
         "name": "Bang Bang Cauliflower",
         "url": "https://kirbiecravings.com/keto-low-carb-bang-bang-cauliflower/",

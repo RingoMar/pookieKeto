@@ -120,6 +120,38 @@ let recipes = {
         "id": 15,
         "tags": ["night", "noon"]
     },
+    "Peanut Butter Truffles": {
+        "name": "Peanut Butter Truffles",
+        "description": "These keto chocolate peanut butter balls are no-bake low carb treats that only require a handful of ingredients to make. Sweetened peanut butter is formed into balls and dipped in melted chocolate.",
+        "link": "peanut-butter-truffles",
+        "image": "https://i.imgur.com/oqV1oEH.png",
+        "id": 16,
+        "tags": ["crinkle"]
+    },
+    "Choco Peanut Butter Shake": {
+        "name": "Choco Peanut Butter Shake",
+        "description": "This is a low carb recipe for making a cold, smooth, and creamy shake, with a rich dark chocolate taste. It's not too sweet; almost like drinking chocolate milk flavored with peanut butter. Two different preparation methods are provided: either blend or shake.",
+        "link": "chocolate-peanut-butter-shake",
+        "image": "https://i.imgur.com/4hwPHNH.png",
+        "id": 17,
+        "tags": ["crinkle"]
+    },
+    "Iced Tea": {
+        "name": "Iced Tea",
+        "description": "This low carb, keto friendly iced tea is slightly sweet with a pleasant lemon flavor. Brewed tea is flash chilled with ice cubes so that it can be promptly served.",
+        "link": "iced-tea",
+        "image": "https://i.imgur.com/520j42L.png",
+        "id": 18,
+        "tags": ["crinkle"]
+    },
+    "Crackers": {
+        "name": "Crackers",
+        "description": "An easy 5-ingredient recipe for low carb crackers using almond flour, parmesan cheese, and egg. Reminiscent of homemade cheese chips, these crackers are great for dipping or as a standalone gluten free and keto friendly snack.",
+        "link": "crackers",
+        "image": "https://i.imgur.com/qT9yNjV.png",
+        "id": 19,
+        "tags": ["crinkle"]
+    },
 
     "Coming Soon": {
         "name": "Coming Soon",
