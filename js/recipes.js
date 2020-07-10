@@ -394,10 +394,46 @@ let reci = {
         "Optionally, use a butter knife to lightly score the dough into 16-20 individual crackers, making it easier to break them up after baking.",
         "Using the remaining beaten egg, brush a very thin layer across the surface of the crackers. Discard the rest of the egg.",
         "Bake at 350 F until golden brown and crispy, about 20 minutes. They will crisp starting from the edges and moving inward; the crackers are done when the centers are crispy. Ovens vary, so frequently monitor the crackers starting at 15 minutes and remove them when done.",
-        "Let them fully cool before breaking into individual crackers by snapping them along the perforations.",
-        
-        
-        
+        "Let them fully cool before breaking into individual crackers by snapping them along the perforations.",        
+        ]
+    },
+    "chocolate-milk": {
+        "name": "Keto Chocolate Milk",
+        "url": "https://www.thelittlepine.com/keto-chocolate-milk/",
+        "image": "https://i.imgur.com/y8mdqqp.png",
+        "ing": ["2 Cups Low Carb Milk (coconut or almond)",
+        "4 Tablespoons Cocoa Powder (dutch process is best!)",
+        "4 Tablespoons Swerve or Lakanto (granulated)",
+        "1/2 Teaspoons Vanilla",
+        "Pinch Kosher Salt"                   
+
+        ],
+        "dir": ["Place all ingredients in a blender and blend until everything has combined.",
+        "Pour into 2 glasses and enjoy!",
+             
+        ]
+    },
+    "mac-n-cheese": {
+        "name": "Cauliflower Mac and Cheese",
+        "url": "https://thatlowcarblife.com/cauliflower-mac-and-cheese/",
+        "image": "https://i.imgur.com/Sj48eWn.png",
+        "ing": ["16 ounces cauliflower, chopped into macaroni sized pieces",
+        "¼ cup heavy cream",
+        "2 ounces cream cheese, room temperature",
+        "1 cup grated cheddar cheese",
+        "1/3 cup grated Monterey jack cheese",
+        "½ teaspoon ground mustard",
+        "½ teaspoon salt",
+        "½ teaspoon cracked pepper"                           
+
+        ],
+        "dir": ["Bring a pot of water to a boil. Add the cauliflower pieces and boil for 5 minutes.",
+        "Drain the water and return the cauliflower to the pot over low heat.",
+        "Add the remaining ingredients and stir well until the cheese has melted fully, about 3 minutes.",
+        "Serve immediately.",
+        "<p class='org-text'>Note</p>",
+        "Use whatever blend of cheeses you prefer in your mac and cheese.",        
+             
         ]
     },
     "bang-bang-cauliflower": {

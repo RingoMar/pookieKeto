@@ -152,6 +152,22 @@ let recipes = {
         "id": 19,
         "tags": ["crinkle"]
     },
+    "Chocolate Milk": {
+        "name": "Chocolate Milk",
+        "description": "Homemade keto chocolate milk is SO easy to make and is ridiculously delicious.",
+        "link": "chocolate-milk",
+        "image": "https://i.imgur.com/y8mdqqp.png",
+        "id": 20,
+        "tags": ["crinkle"]
+    },
+    "Mac and Cheese": {
+        "name": "Mac and Cheese",
+        "description": "Cauliflower mac and cheese is extra cheesy and melty! This tastes so much like the real deal that I bet you won’t even miss the carbs.",
+        "link": "mac-n-cheese",
+        "image": "https://i.imgur.com/Sj48eWn.png",
+        "id": 21,
+        "tags": ["crinkle"]
+    },
 
     "Coming Soon": {
         "name": "Coming Soon",
@@ -186,7 +202,7 @@ for (x in recipes) {
         tagss += ` ${recipes[x]["tags"][i]}`;
     }
     var final = `
-        <div class="cards-rec col s12 m6 ${tagss}">
+        <div class="post cards-rec col s12 m6 ${tagss}">
             <div class="card large">
                 <div class="card-image">
                     <img class="img-item" src="${image}">
@@ -300,4 +316,12 @@ $(".lunch-btn").click(function () {
         $(".cards-rec").not(".noon").css("display", "none");
         $(".lunch-btn").append("<i class='material-icons right done-check'>done</i>");
     }
+});
+
+var elem = document.querySelector('.all-rec');
+var infScroll = new InfiniteScroll(elem, {
+    // options
+    path: '.pagination__next',
+    append: '.post',
+    history: false,
 });
