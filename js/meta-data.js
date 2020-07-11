@@ -166,65 +166,49 @@ let recipes = {
         "link": "mac-n-cheese",
         "image": "https://i.imgur.com/Sj48eWn.png",
         "id": 21,
-        "tags": ["crinkle"]
+        "tags": ["noon", "night"]
     },
-
-    "Coming Soon": {
-        "name": "Coming Soon",
-        "description": "Coming Soon",
-        "link": "coming-soon",
-        "image": "../img/unknown.png",
-        "id": 123,
-        "tags": ["unknown"]
-
-
-    }
 }
 
 function showPage() {
     document.getElementById("RinLoad").style.display = "none";
-
     $(".all-rec").fadeIn(10000);
-    // document.getElementById("Rinformulaire").style.display = "block";
 }
 
+const dekeys = Object.keys(recipes);
+const revlist = (dekeys.reverse());
 
-
-for (x in recipes) {
-    var name = recipes[x]["name"]
-    var description = recipes[x]["description"]
-    var link = recipes[x]["link"]
-    var image = recipes[x]["image"]
-    var id = recipes[x]["id"]
-    let tags = recipes[x]["tags"]
+for (x in revlist) {
+    var name = recipes[revlist[x]]["name"]
+    var description = recipes[revlist[x]]["description"]
+    var link = recipes[revlist[x]]["link"]
+    var image = recipes[revlist[x]]["image"]
+    var id = recipes[revlist[x]]["id"]
+    let tags = recipes[revlist[x]]["tags"]
     let tagss
     for (i = 0; i < tags.length; i++) {
-        tagss += ` ${recipes[x]["tags"][i]}`;
+        if ((recipes[revlist[x]]["tags"][i]) != "undefined") {
+            tagss += ` ${recipes[revlist[x]]["tags"][i]}`;
+        }
     }
     var final = `
-        <div class="post cards-rec col s12 m6 ${tagss}">
-            <div class="card large">
+        <div class="cards-rec col s12 m6 ${tagss}">
+            <div class="blue-grey darken-1 card large">
                 <div class="card-image">
                     <img class="img-item" src="${image}">
                     <span class="card-title org-text card-info-back z-depth-3">${name}</span>
                 </div>
-                <div class="card-content">
+                <div class="blue-grey darken-1 white-text card-content">
                     <p>${description}</p>
                 </div>
-                <div class="card-action">
-                    <a href="../pages/recipe.html?r_id=${link}">view</a>
-                    <a class="btn tooltipped right" data-position="Top" id=${id} data-tooltip="Star - Coming Soon"><i
-                    class="material-icons">star_border</i></a>
+                <div class="blue-grey darken-1 card-action">
+                    <a href="../pages/recipe.html?r_id=${link}"><i class="material-icons left">view_day</i>view</a>
                 </div>
             </div>
         </div>`
 
     $(".all-rec").append(final);
-
 }
-// $(".all-rec").delay(1050).animate({
-//     opacity: 1
-// }, 800);
 showPage()
 
 let active = false
@@ -318,10 +302,3 @@ $(".lunch-btn").click(function () {
     }
 });
 
-var elem = document.querySelector('.all-rec');
-var infScroll = new InfiniteScroll(elem, {
-    // options
-    path: '.pagination__next',
-    append: '.post',
-    history: false,
-});

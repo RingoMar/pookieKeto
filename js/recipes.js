@@ -186,7 +186,6 @@ let reci = {
         "url": "https://www.primalkitchen.com/pesto-keto-cauliflower-pizza-with-primal-kitchen/",
         "image": "https://i.imgur.com/tNvqlIX.jpg",
         "ing": ["<p class='org-text'>For the pizza crust</p>",
-            "",
             "1 head cauliflower",
             "1 egg",
             "1/2 cup coconut flour",
@@ -195,7 +194,6 @@ let reci = {
             "1 tsp oregano",
             "1 tablespoon Primal Kitchen Avocado Oil",
             "<p class='org-text'>For the avocado oil pesto</p>",
-            "",
             "2 cups fresh basil",
             "1/3 cup pine nuts, toasted",
             "1/4 cup grated Parmesan cheese",
@@ -208,7 +206,6 @@ let reci = {
             "1/2 cup broccolini",
             "1/2 cup mozzarella cheese (full fat!)",
             "2 tablespoons Primal Kitchen Vegan Ranch",
-            " ",
             "Optional: Top with red pepper flakes",
 
         ],
@@ -400,7 +397,7 @@ let reci = {
     "chocolate-milk": {
         "name": "Keto Chocolate Milk",
         "url": "https://www.thelittlepine.com/keto-chocolate-milk/",
-        "image": "https://i.imgur.com/y8mdqqp.png",
+        "image": "https://i.imgur.com/2srnIS7.jpg",
         "ing": ["2 Cups Low Carb Milk (coconut or almond)",
         "4 Tablespoons Cocoa Powder (dutch process is best!)",
         "4 Tablespoons Swerve or Lakanto (granulated)",
@@ -479,7 +476,7 @@ try {
     var item = ranreci[Math.floor(Math.random() * ranreci.length - 1)];
     $(".randdrop").append(`<a class="center" href="pages/recipe.html?r_id=${item}"><i class="tiny material-icons">directions_bike</i>I'm Feeling Lucky</a>`);
     $(".preload-imfl").fadeOut("fast");
-    document.getElementByClass("preload-imfl").style.display = "none";
+    // document.getElementByClass("preload-imfl").style.display = "none";
 } catch (error) {
     console.log(error)
 }
@@ -487,20 +484,26 @@ try {
 if (c) {
     console.log(c);
     try {
-        $(".header-img").append(`<img class="img-header" style="background-image: url(${reci[c]["image"]}); background-size: 320px; background-position: center; height: 200px; width: 100%;">`);
-        $(".recipeT").append(`<h1 class="center org">${reci[c]["name"]}</h1>`);
+        $(".circular--portrait").append(`<img src="${reci[c]["image"]}">`);
+        $(".headerr").append(`<h1 class="brand-logo center white-text">${reci[c]["name"]}</h1>`);
         for (ingf in reci[c]["ing"]) {
-            $(".ing").append(`<li>${reci[c]["ing"][ingf]}</li>`);
+            if (reci[c]["ing"][ingf].includes("<p class=")){
 
+                $(".ing").append(`<span class="white-text"> ${reci[c]["ing"][ingf]}</span>`);
+            }
+            else {
+                $(".ing").append(`<li class="white-text" ><p><label><input type="checkbox"/><span class="white-text">${reci[c]["ing"][ingf]}</span></label></p></li>`);
+
+            }
         }
 
         for (dif in reci[c]["dir"]) {
             if (reci[c]["dir"][dif].includes("<p class=")){
 
-                $(".dir").append(`<ul>${reci[c]["dir"][dif]}</ul>`);
+                $(".dir").append(`<ul class="white-text">${reci[c]["dir"][dif]}</ul>`);
             }
             else{
-                $(".dir").append(`<li>${reci[c]["dir"][dif]}</li>`);
+                $(".dir").append(`<li class="white-text">${reci[c]["dir"][dif]}</li>`);
             }
 
         }

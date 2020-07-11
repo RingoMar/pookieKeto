@@ -136,5 +136,58 @@ form.datSerch {
 }
 
 .rinactive {
-    background-color: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+/* list with numbers config */
+
+ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+}
+
+ol>li {
+    margin: 20px 8px 0px 0px;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
+
+ol>li:before {
+    display: inline-block;
+    width: 2em;
+    padding-right: 1px;
+    color: #fff;
+    border-color: #ffab40;
+    border-style: solid;
+    background-color: #ffab40;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
+
+.circular--portrait {
+    position: absolute;
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h1.brand-logo.center.white-text {
+    font-size: 4em;
 }
