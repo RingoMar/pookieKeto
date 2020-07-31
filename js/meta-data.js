@@ -243,6 +243,69 @@ let recipes = {
     id: 27,
     tags: ["crinkle"],
   },
+  "Keto Chaffle": {
+    name: "Keto Chaffle",
+    description:
+      "This quick and easy recipe can be used for both savoury and sweet chaffles. Just add a topping of your choice to create a delicious and nutritions meal or healthy dessert. Below you find the recipe team’s favorite topping suggestions.",
+    link: "keto-chaffle",
+    image: "https://i.imgur.com/ChufqmZ.jpg",
+    id: 28,
+    tags: ["moring"],
+  },
+  "Almond Butter": {
+    name: "Almond Butter",
+    description:
+      "Easy to make, healthy, affordable, tasty... and the list could go on! The perfect spread for breakfast rolls, waffles and pancakes. You can even use it in sauces and stews for some extra flavor!",
+    link: "almond-butter",
+    image: "https://i.imgur.com/NQxsc9f.jpg",
+    id: 29,
+    tags: ["crinkle"],
+  },
+  Buttercream: {
+    name: "Buttercream",
+    description:
+      "Pure vanilla love. Amazing buttercream flavor. Fabulous creaminess. This keto buttercream will make you reach for your favorite dessert, and guild the lily of flavortown!",
+    link: "buttercream",
+    image: "https://i.imgur.com/AF7QDnG.jpeg",
+    id: 30,
+    tags: ["crinkle"],
+  },
+  Pizza: {
+    name: "Pizza",
+    description:
+      "Pizza, meet keto. It's a simple take on how to get your pizza fix without the carbs. It’s everything you want — whether it is a simple pepperoni, cheese and tomato-sauce version, or a loaded extravaganza.",
+    link: "pizza",
+    image: "https://i.imgur.com/mVbNlej.jpg",
+    id: 31,
+    tags: ["noon"],
+  },
+  "Keto BLT": {
+    name: "Keto BLT",
+    description:
+      "We paired this mouthwatering, keto version with fluffy cloud bread, also known as oopsie bread. Oops, it's bread! Gluten-free and grain-free, it's a heavenly low-carb take on a classic sandwich. Indulge.",
+    link: "blt",
+    image: "https://i.imgur.com/QV2CueQ.jpeg",
+    id: 32,
+    tags: ["noon"],
+  },
+  "Meat Pie": {
+    name: "Meat Pie",
+    description:
+      "Keep everyone happy with this satisfying, cheese-topped keto masterpiece. Meat pie may be a little old-school, but it’s time to rediscover its deliciousness.",
+    link: "meat-pie",
+    image: "https://i.imgur.com/pv93SKw.jpeg",
+    id: 33,
+    tags: ["noon"],
+  },
+  "Hamburger Patties": {
+    name: "Hamburger Patties",
+    description:
+      "A delicious burger needs no bun! Enjoy this satisfying patty bare, topped with creamy tomato gravy and a side of sautéed cabbage. Keto satisfaction guaranteed!",
+    link: "hamburger-patties",
+    image: "https://i.imgur.com/MkQpbsS.png",
+    id: 34,
+    tags: ["noon"],
+  },
 };
 
 function showPage() {
