@@ -151,7 +151,7 @@ ol {
 ol>li {
     margin: 20px 8px 0px 0px;
     padding: 0 0 0 1em;
-    text-indent: -2em;
+    text-indent: -3em;
     list-style-type: none;
     counter-increment: item;
 }
@@ -170,23 +170,118 @@ ol>li:before {
     content: "STEP "counter(item) ".";
 }
 
+.justFlex {
+    display: flex !important;
+}
+
 .circular--portrait {
-    position: absolute;
-    margin-top: 24px;
-    margin-left: 24px;
-    width: 200px;
+    display: flex;
+    width: 100%;
     height: auto;
+    align-self: baseline;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 8%;
 }
 
 .circular--portrait img {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 2%;
 }
 
 h1.brand-logo.center.white-text {
     font-size: 4em;
+}
+
+.grid-example.col.s12.blue-grey.darken-1.z-depth-2 {
+    padding: 35px;
+}
+
+.Rinflex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.Rinflex-item {
+    justify-content: flex-end;
+    margin: 3px;
+    padding: 10px 0 0 10px;
+
+}
+
+.Rininfo-container {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.Rinresponsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+h2.center.white-text {
+    font-weight: 800;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 858px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 12px !important;
+    }
+}
+
+@media (mix-width: 724px) {
+    html {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 623px) {
+    html {
+        font-size: 15px !important;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (mix-width: 1281px) {
+    html {
+        font-size: 22px !important;
+    }
+
+    .circular--portrait {
+        width: 30%;
+    }
 }

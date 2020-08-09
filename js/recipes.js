@@ -870,9 +870,11 @@ try {
 if (c) {
   console.log(c);
   try {
-    $(".circular--portrait").append(`<img src="${reci[c]["image"]}">`);
+    $(".circular--portrait").append(
+      `<img class="Rinresponsive-img" src="${reci[c]["image"]}">`
+    );
     $(".headerr").append(
-      `<h1 class="brand-logo center white-text">${reci[c]["name"]}</h1>`
+      `<h2 class="center white-text">${reci[c]["name"]}</h2>`
     );
     for (ingf in reci[c]["ing"]) {
       if (reci[c]["ing"][ingf].includes("<p class=")) {
@@ -881,7 +883,7 @@ if (c) {
         );
       } else {
         $(".ing").append(
-          `<li class="white-text" ><p><label><input type="checkbox"/><span class="white-text">${reci[c]["ing"][ingf]}</span></label></p></li>`
+          `<li class="white-text" ><p><label><input type="checkbox" id="ringoCheck"/><span class="white-text">${reci[c]["ing"][ingf]}</span></label></p></li>`
         );
       }
     }
@@ -905,3 +907,30 @@ if (c) {
 } else {
   console.log("Nothing found!");
 }
+
+window.onload = function () {
+  var i,
+    checkboxes = document.querySelectorAll("input[type=checkbox]");
+  function save() {
+    for (i = 0; i < checkboxes.length; i++) {
+      localStorage.setItem(checkboxes[i].value, checkboxes[i].checked);
+    }
+  }
+
+  function load_() {
+    for (i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked =
+        localStorage.getItem(checkboxes[i].value) === "true" ? true : false;
+    }
+  }
+  load_();
+  $(document).ready(function () {
+    $("input[type=checkbox]").change(function () {
+      console.log("chnages");
+      checkers = document.querySelectorAll("input[type=checkbox]");
+      for (i = 0; i < checkers.length; i++) {
+        localStorage.setItem(checkers[i].value, checkers[i].checked);
+      }
+    });
+  });
+};
