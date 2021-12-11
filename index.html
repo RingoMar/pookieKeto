@@ -31,8 +31,21 @@
             margin: 0;
             font-weight: bold !important;
         }
-        .hovD:hover{
 
+        .hovD {
+
+            opacity: .70;
+            transition: all 300ms ease-in;
+
+        }
+
+        .hovD:hover {
+
+            transition: all 300ms ease-in;
+            transform: scale(1.03);
+            transition: 0.25s;
+
+            opacity: 1;
         }
     </style>
 </head>
@@ -69,8 +82,8 @@
         <br>
 
         <div class="row">
-            <a class="hovD" href="pages/all-recipes.html">
-                <div class="col s12 m6">
+            <a href="pages/all-recipes.html">
+                <div class="col s12 m6 hovD">
                     <div class="card-panel brown  darken-1">
                         <h1 class="card-title r-cardTitle white-text card-content-popout"><i
                                 class="material-icons">directions_run</i>RECIPES</h1>
@@ -79,8 +92,8 @@
                     </div>
                 </div>
             </a>
-            <a class="rando hovD" href="pages/all-recipes.html">
-                <div class="col s12 m6">
+            <a class="rando" href="pages/all-recipes.html">
+                <div class="col hovD s12 m6">
                     <div class="card-panel brown  darken-1">
                         <h1 class="card-title r-cardTitle white-text card-content-popout"><i
                                 class="material-icons small">casino</i><span>RANDOM</span></h1>
