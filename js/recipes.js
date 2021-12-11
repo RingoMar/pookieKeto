@@ -27,8 +27,7 @@ let reci = {
   },
   "kohlrabi-fries": {
     name: "Kohlrabi Fries",
-    url:
-      "https://www.kochtrotz.de/rezepte/leckere-kohlrabi-pommes-aus-dem-backofen-low-carb-und-fettarm/",
+    url: "https://www.kochtrotz.de/rezepte/leckere-kohlrabi-pommes-aus-dem-backofen-low-carb-und-fettarm/",
     image: "https://i.imgur.com/aWsHsEv.jpg",
     ing: [
       "2 big Kohlrabi",
@@ -50,8 +49,7 @@ let reci = {
 
   "cauliflower-sandwiches": {
     name: "Cauliflower Sandwiches",
-    url:
-      "https://kirbiecravings.com/cauliflower-crusted-grilled-cheese-sandwiches/",
+    url: "https://kirbiecravings.com/cauliflower-crusted-grilled-cheese-sandwiches/",
     image: "https://i.imgur.com/v6FaB07.png",
     ing: [
       "1 medium head cauliflower raw, cut into small florets and stem removed",
@@ -208,8 +206,7 @@ let reci = {
   },
   "portabella-sliders": {
     name: "Portabella Sliders",
-    url:
-      "http://www.modernlowcarb.com/recipes/2015/5/31/low-carb-portabella-sliders-keto-gluten-free",
+    url: "http://www.modernlowcarb.com/recipes/2015/5/31/low-carb-portabella-sliders-keto-gluten-free",
     image: "https://i.imgur.com/MuUSAME.png",
     ing: [
       "1 pound grass fed beef (I like 80/20 for burgers)",
@@ -231,8 +228,7 @@ let reci = {
   },
   "cauliflower-pizza": {
     name: "Cauliflower Pizza",
-    url:
-      "https://www.primalkitchen.com/pesto-keto-cauliflower-pizza-with-primal-kitchen/",
+    url: "https://www.primalkitchen.com/pesto-keto-cauliflower-pizza-with-primal-kitchen/",
     image: "https://i.imgur.com/tNvqlIX.jpg",
     ing: [
       "<p class='org-text'>For the pizza crust</p>",
@@ -561,8 +557,7 @@ let reci = {
   },
   "pumpkin-cheesecake": {
     name: "Keto Pumpkin Cheesecake with Almond Pecan Crust",
-    url:
-      "https://www.allrecipes.com/recipe/272693/keto-pumpkin-cheesecake-with-almond-pecan-crust/",
+    url: "https://www.allrecipes.com/recipe/272693/keto-pumpkin-cheesecake-with-almond-pecan-crust/",
     image: "https://i.imgur.com/pUNHy8j.png",
     ing: [
       "<p class='org-text'>Crust<p/>",
@@ -626,8 +621,7 @@ let reci = {
   },
   "peanut-butter-fudge": {
     name: "Keto Peanut Butter Fudge Fat Bomb",
-    url:
-      "https://www.allrecipes.com/recipe/264650/keto-peanut-butter-fudge-fat-bomb/",
+    url: "https://www.allrecipes.com/recipe/264650/keto-peanut-butter-fudge-fat-bomb/",
     image: "https://i.imgur.com/IXBtxTL.png",
     ing: [
       "1 cup unsweetened peanut butter, softened",
@@ -813,8 +807,7 @@ let reci = {
   },
   "hamburger-patties": {
     name: "Keto hamburger patties with creamy tomato sauce and fried cabbage",
-    url:
-      "https://www.dietdoctor.com/recipes/keto-hamburger-patties-tomato-sauce-cabbage",
+    url: "https://www.dietdoctor.com/recipes/keto-hamburger-patties-tomato-sauce-cabbage",
     image: "https://i.imgur.com/MkQpbsS.png",
     ing: [
       "<p class='org-text'>Hamburger patties</p>",
@@ -858,9 +851,13 @@ let reci = {
 try {
   let ranreci = Object.keys(reci);
   var item = ranreci[Math.floor(Math.random() * ranreci.length - 1)];
-  $(".randdrop").append(
-    `<a class="center" href="pages/recipe.html?r_id=${item}"><i class="tiny material-icons">directions_bike</i>I'm Feeling Lucky</a>`
-  );
+  if (item == undefined) {
+    item = ranreci[Math.floor(Math.random() * ranreci.length - 1)];
+  }
+  // $(".randdrop").append(
+  //   `<a class="center card-content-popout" href="pages/recipe.html?r_id=${item}"><i class="tiny material-icons">directions_bike</i>I'm Feeling Lucky</a>`
+  // );
+  $(".rando").attr("href", `pages/recipe.html?r_id=${item}`);
   $(".preload-imfl").fadeOut("fast");
   // document.getElementByClass("preload-imfl").style.display = "none";
 } catch (error) {

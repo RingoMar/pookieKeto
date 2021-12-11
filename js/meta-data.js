@@ -331,15 +331,15 @@ for (x in revlist) {
   }
   var final = `
         <div class="cards-rec col s12 m6 ${tagss}">
-            <div class="blue-grey darken-1 card large">
+            <div class="brown  darken-2 card large">
                 <div class="card-image">
                     <img class="img-item" src="${image}">
                     <span class="card-title org-text card-info-back z-depth-3">${name}</span>
                 </div>
-                <div class="blue-grey darken-1 white-text card-content">
+                <div class="brown  darken-2 white-text card-content">
                     <p>${description}</p>
                 </div>
-                <div class="blue-grey darken-1 card-action">
+                <div class="brown  darken-2 card-action">
                     <a href="../pages/recipe.html?r_id=${link}"><i class="material-icons left">view_day</i>view</a>
                 </div>
             </div>
